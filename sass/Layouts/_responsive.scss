@@ -1,2 +1,25 @@
 // responsive các phần chung cho cả web 
 // vd : cả body, đổi đổi chữ mặc đinh cả web
+// REPONSIVE 
+@include reponsive("medium"){
+    // .header__left{
+    //     .header__form,.header__cate {
+    //         display: none;
+    //     }
+    //     .navbar-brand {
+    //             flex-grow: 0;
+    //     }
+    // }
+    // .header__right {
+    //     .ude-btnGroup {
+    //         display: none;
+    //     }
+    // }
+}
+@include reponsive("extra-large"){
+    // .header__right {
+    //     .ude-business,.ude-teach {
+    //         display: none;
+    //     }
+    // }
+}

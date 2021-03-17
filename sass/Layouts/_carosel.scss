@@ -1,5 +1,39 @@
 .udeCarousel{
     background-image: url(../img/cover.jpg);
+    background-size: cover;
     height: 400px;
-
+    display: flex;
+    position: relative;
+    .udeCarousel__content {
+        max-width: 460px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(50%,50%);
+        h3 {
+            @include styleText($color-white-0,$fs-4,$fw-bold-0);
+        }
+        p {
+            @include styleText($color-white-0,18px,100);
+            word-wrap: break-word;
+        }
+        .udeCarousel__content-input {
+            font-size: 20px;
+            height: 50px;
+            padding: 11px 17px;
+            width: 100%;
+        }
+        form {
+            position: relative;
+        }
+        .udeCarousel__content-btn {
+            font-size: 20px;
+            position: absolute;
+            top: 3px;
+            right: 0;
+            i {
+                color: red;
+            }
+        }
+    }
 }
