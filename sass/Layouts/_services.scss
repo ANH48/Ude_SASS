@@ -1,0 +1,47 @@
+.services {
+    .services__line {
+        height: 8px;
+        width: 100%;
+        background: linear-gradient(-45deg,#EC5252 0%,#6E1A52 100%);
+    }
+    .services__main {
+        background-color: #28313b;
+    }
+    .services__main-container {
+        width: 80%;
+        margin: 0 auto;
+        .services__main-icon-row-5 {
+            padding-bottom: 32px;
+            padding-top: 48px;
+            visibility: visible;
+        }
+        .services__main-icon-row-3 {
+            .content__text{
+                color: #FFF;
+                h1 {
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 1.33em;
+                }
+                p {
+                    text-align: center;
+                }
+                .line-100 {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .icon {
+                i {
+                    line-height: 3;
+                }
+            }
+        }
+        .icon {
+            text-align: center;
+            font-size: 32px;
+            color: #FFF;
+        }
+    }
+}
