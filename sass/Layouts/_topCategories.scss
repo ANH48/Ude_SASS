@@ -1,0 +1,52 @@
+.topCategories {
+    margin: 25px 0px;
+    .topCategories-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .topCategories-title {
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.33em;
+        }
+    }
+    .topCategories-content {
+        .topCategories-content-listItem {
+            .item {
+                margin: 10px 0px;
+                .fix-item {
+                    padding: 10px 25px;
+                    display: flex;
+                    flex-direction: row;
+                    border: 1px solid #ddd ;
+                    box-shadow: 0 5px 5px -5px rgb(172, 171, 171);
+                    transition: 0.5s;
+                    &:hover {
+                        box-shadow: 0 0 15px rgb(172, 171, 171);;
+                    }
+                }
+                .icon {
+                    font-size: 32px;
+                    padding-right: 16px;
+                    font-weight: 100;
+                    color: #333;
+                }
+                .text {
+                    font-size: 1rem;
+                    font-weight: 100;
+                }
+                .text__inline {
+                    height: 32px;
+                    line-height: 45px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    flex: 1;
+                    min-width: 1px;
+                }
+            }
+        }
+
+    }
+}

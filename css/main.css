@@ -575,4 +575,68 @@ html, body {
   font-size: 32px;
   color: #FFF;
 }
+
+.topCategories {
+  margin: 25px 0px;
+}
+
+.topCategories .topCategories-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.topCategories .topCategories-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33em;
+}
+
+.topCategories .topCategories-content .topCategories-content-listItem .item {
+  margin: 10px 0px;
+}
+
+.topCategories .topCategories-content .topCategories-content-listItem .item .fix-item {
+  padding: 10px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 5px 5px -5px #acabab;
+          box-shadow: 0 5px 5px -5px #acabab;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.topCategories .topCategories-content .topCategories-content-listItem .item .fix-item:hover {
+  -webkit-box-shadow: 0 0 15px #acabab;
+          box-shadow: 0 0 15px #acabab;
+}
+
+.topCategories .topCategories-content .topCategories-content-listItem .item .icon {
+  font-size: 32px;
+  padding-right: 16px;
+  font-weight: 100;
+  color: #333;
+}
+
+.topCategories .topCategories-content .topCategories-content-listItem .item .text {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.topCategories .topCategories-content .topCategories-content-listItem .item .text__inline {
+  height: 32px;
+  line-height: 45px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+}
 /*# sourceMappingURL=main.css.map */
