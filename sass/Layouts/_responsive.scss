@@ -1,25 +1,488 @@
 // responsive các phần chung cho cả web 
 // vd : cả body, đổi đổi chữ mặc đinh cả web
 // REPONSIVE 
-@include reponsive("medium"){
-    // .header__left{
-    //     .header__form,.header__cate {
-    //         display: none;
-    //     }
-    //     .navbar-brand {
-    //             flex-grow: 0;
-    //     }
-    // }
-    // .header__right {
-    //     .ude-btnGroup {
-    //         display: none;
-    //     }
-    // }
+@include reponsive("supper-sm"){
+    // HEADER 
+    header {
+        .navbar {
+            padding: .5rem 0;
+            .icon-bs4 {
+                font-size: $fs-2;
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+        .header__right {
+            .ude-shoping-cart {
+                a {
+                    i {
+                        font-size: $fs-2; 
+                    }
+                }
+            }
+            .ude-business {
+                display: none;
+            }
+            .ude-teach {
+                display: none;
+            }
+            .ude-btnGroup {
+                display: none;
+            }
+        }
+        .header__left {
+            .header__cate {
+                display: none;
+            }
+            .header__form {
+                display: none;
+            }
+        }
+    }
+
+    // Carousel 
+    .udeCarousel {
+        background-size: 100% 100%;
+        height: 340px;
+        .udeCarousel__content {
+            transform: translate(7%, 40%);
+            max-width: 320px;
+            h3 {
+                font-size: $fs-3;
+                margin-right: 150px;
+                font-weight: 100;
+            }
+            p {
+                margin-right: 130px;
+            }
+        }
+    }
+
+    // Intro 
+    .intro {
+        .udeintro__new-channel {
+            display: none;
+        }
+        .udelistCoures {
+            .listCoures__bg-left {
+                display: none;
+            }
+        }
+    }
+    // enjoy 
+    .enjoy {
+        display: none;
+    }
+   
+    // services  
+    .services {
+        .services__main {
+            .icon {
+                display: none;
+            }
+        }
+    }
+
+    // Feedback 
+    .feedback {
+        .logo-item  {
+            margin-bottom: 10px;
+        }
+        .ude__feedback-contact {
+            .non-student-cta {
+                border: none;
+                padding: 0 0 30px 0;
+            }
+        }
+    }
+
+    // footer 
+    .footer {
+        .footer__main {
+            .footer__main-links {
+                display: none;
+            }
+            .ude__lenguage {
+                text-align: left!important;
+            }
+        }
+        .footer__bottom {
+            .footer__bottom-cotainer {
+                width: 98%;
+                margin: 15px auto;
+            }
+            .dib {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .footer__copyright {
+                display: block;
+                font-size: 12px;
+                color: #7e7e7e;
+            }
+            .footer__bottom-right {
+                text-align: left!important;
+                .links {
+                    font-size: 12px;
+                }
+                .footer__sitemap {
+                    display: inline-block;
+                }
+                .footer__app-download-link {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+// @include reponsive("small") {
+
+// }
+
+@include reponsive("medium") {
+
+}
+
+// IPAD-Pro 
+@include reponsive("large"){
+   header {
+    .header__right {
+        .ude-btnGroup {
+            display: block;
+            .ude-btnWhite {
+                font-size: 12px;
+                border: 1px solid black;
+            }
+            .ude-btnRed {
+                font-size: 12px;
+            }
+        }
+    }
+    .header__left {
+        .header__cate {
+            display: block;
+        }
+        .header__form {
+            display: block;
+        }
+    }
+   }
+    // Carousel 
+    .udeCarousel {
+        background-size: 110% 150%;
+        height: 500px;
+        max-width: 1024px;
+        .udeCarousel__content {
+            transform: translate(10%, 90%);
+            max-width: 460px;
+            h3 {
+                font-size: $fs-4;
+                font-weight: 700;
+                margin-right: 0;
+            }
+            p {
+                margin-right: 0;
+            }
+          
+        }
+    }
+
+    // Intro 
+    .intro {
+        .udeintro__new-channel {
+            display: block;
+            .how-udemy-works__icon {
+                display: none;
+            }
+            .udeintro__new-line {
+                width: 100%;
+                margin: 0 auto;
+                .udeintro__new-line-item {
+                    text-align: center;
+                }
+            }
+        }
+        .udelistCoures {
+            .listCoures__bg-left {
+                display: block;
+                display: flex;
+            }
+        }
+        .udelistCoures-container {
+          width: 90%;
+          margin: 0 auto;
+        }
+        .showTime {
+          .nav-tabs {
+            .nav-item {
+              .nav-link {
+                padding: .5rem .3rem;
+                white-space: normal;
+                max-width: 110px;
+                height: 60px;
+                text-align: center;
+                font-size: 16px;
+                &:hover {
+                  border: none;
+                  color: #007791;
+                  padding: .5rem .3rem;
+              }
+              }
+              .nav-link.active {
+                color: #333;
+                border-bottom: 3px solid #007791;
+            }
+            }
+          }
+        }
+
+    }
+
+     // enjoy 
+     .enjoy {
+      display: block;
+      .enjoy-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    }
+    // services  
+    .services {
+      .services__main {
+          .icon {
+              display: block;
+          }
+          .services__main-container {
+            width: 95%;
+            margin: 0 auto;
+            position: relative;
+          }
+          .content__text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(0%,110%);
+          }
+          .services__main-icon-row-3{
+            .icon-left {
+              margin-right: 100px;
+            }
+            .icon-right {
+              margin-left: 100px;
+            }
+          }
+      }
+    }
+
+    //topCategories 
+    .topCategories {
+      .topCategories-container {
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
+
+    //feedback
+    .feedback {
+      .ude__feedback {
+        width: 95%;
+        margin: 0 auto;
+        .ude__feedback-partners {
+          .partners__logos {
+            width: 90%;
+            margin: 0 auto;
+          }
+        }
+      }
+      .ude__feedback-contact {
+        .non-student-cta {
+            border-right: 1px solid #dedfe0;
+            padding: 0 0 50px 0;
+        }
+      }
+    }
+
+    // footer 
+    .footer {
+      .footer__main-cotainer {
+        width: 98%;
+        margin: 0 auto;
+       
+      }
+      .footer__main {
+          .footer__main-links {
+              display: block;
+          }
+          .ude__lenguage {
+              text-align: right!important;
+          }
+      }
+      .footer__bottom {
+          .footer__bottom-cotainer {
+              width: 98%;
+              margin: 15px auto;
+          }
+          .dib {
+              display: block;
+              margin-bottom: 10px;
+          }
+          .footer__copyright {
+              display: block;
+              font-size: 12px;
+              color: #7e7e7e;
+          }
+          .footer__bottom-right {
+              text-align: left!important;
+              .links {
+                  font-size: 12px;
+              }
+              .footer__sitemap {
+                  display: inline-block;
+              }
+              .footer__app-download-link {
+                  display: inline-block;
+              }
+          }
+      }
+  }
+
 }
 @include reponsive("extra-large"){
-    // .header__right {
-    //     .ude-business,.ude-teach {
-    //         display: none;
-    //     }
-    // }
+   // HEADER 
+   header {
+        
+       .container-fluid {
+           .row {
+               width: 90%;
+               margin: 0 auto;
+           }
+       }
+       .header__right {
+            .ude-business {
+                display: block;
+            }
+            .ude-teach {
+                display: block;
+            }
+            .ude-shoping-cart a i {
+                font-size: 13px;
+            }
+       }
+       .header__left {
+           text-align: center;
+           .header__form {
+                .form-control { 
+                    padding: 20px 20px;
+                }
+           }
+       }
+   }
+
+    // Carousel 
+    .udeCarousel {
+        height: 500px;
+        max-width: 100%;
+        .udeCarousel__content {
+            transform: translate(30%, 80%);
+            max-width: 460px;
+            h3 {
+                font-size: $fs-4;
+                margin-right: 0px;
+                font-weight: 700;
+            }
+            p {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    // Intro 
+    .intro {
+        .udeintro__new-channel {
+            display: block;
+            .how-udemy-works__icon {
+                display: block;
+                padding-right: 0px;
+            }
+            .udeintro__new-line {
+                width: 90%;
+                margin: 0 auto;
+                .udeintro__new-line-item {
+                    text-align: left;
+                }
+            }
+        }
+        .udelistCoures-container {
+          width: 80%;
+          margin: 0 auto;
+        }
+        .showTime {
+          .nav-tabs {
+            .nav-item {
+              .nav-link {
+                padding: .5rem 1rem;
+                white-space: normal;
+                max-width: 100%;
+                height: 100%;
+                text-align: center;
+                font-size: 16px;
+                &:hover {
+                  border: none;
+                  color: #007791;
+                  padding: .5rem 1rem;
+              }
+              }
+              .nav-link.active {
+                color: #333;
+                border-bottom: 3px solid #007791;
+            }
+            }
+          }
+        }
+       
+    }
+    // enjoy 
+    .enjoy {
+        .enjoy-item {
+            .enjoy-item-container {
+                max-width: 480px;
+            }
+        }
+    }
+
+     //topCategories 
+     .topCategories {
+        .topCategories-container {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+
+    // feedback 
+    .feedback {
+        .ude__feedback {
+          width: 80%;
+          margin: 0 auto;
+        }
+        .ude__feedback-contact {
+            padding-bottom: 30px;
+        }
+    }
+
+    // footer 
+    .footer {
+        .footer__bottom {
+            .footer__bottom-right {
+                text-align: right!important;
+                .footer__sitemap {
+                    display: none;
+                }
+                .footer__app-download-link  {
+                    display: none;
+                }
+            }
+        }
+    }
 }

@@ -12,6 +12,10 @@ html, body {
   font-weight: normal;
 }
 
+.row {
+  width: 100%;
+}
+
 .ude-btnWhite {
   background-color: #fff;
   border: 1px solid #dedfe0;
@@ -52,6 +56,13 @@ html, body {
   background-color: #992337;
   color: #fff;
   border-color: #992337;
+}
+
+.ude-btnquaternary {
+  color: #686f7a;
+  background-color: #fff;
+  border: 1px solid #686f7a;
+  padding: 8px 20px;
 }
 
 .header__left {
@@ -220,6 +231,104 @@ html, body {
   color: red;
 }
 
+.footer .footer__main {
+  border-top: 1px solid #dedfe0;
+  border-bottom: 1px solid #dedfe0;
+}
+
+.footer .footer__main-cotainer {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 40px 20px;
+}
+
+.footer .footer__main-cotainer .footer__main-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 110px;
+}
+
+.footer .footer__main-cotainer .footer__main-links ul > li {
+  list-style: none;
+  display: inline-block;
+  padding: 2px 0px;
+}
+
+.footer .footer__main-cotainer .footer__main-links ul > li a {
+  color: #007791;
+  background-color: transparent;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer .footer__main-cotainer .footer__main-links ul > li a:hover {
+  color: #111;
+}
+
+.footer .footer__main-cotainer .footer__main-links ul > li a.bold {
+  font-weight: 700;
+}
+
+.footer .footer__main-cotainer .ude__lenguage .icon {
+  padding-right: 10px;
+  font-size: 13px;
+}
+
+.footer .footer__main-cotainer .ude__lenguage .text {
+  padding-right: 25px;
+  font-size: 15px;
+}
+
+.footer .footer__bottom {
+  border-bottom: 6px solid #ec5252;
+}
+
+.footer .footer__bottom .footer__bottom-cotainer {
+  width: 80%;
+  margin: 30px auto;
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer .footer__bottom .list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+
+.footer .footer__bottom ul > li {
+  display: inline-block;
+  padding: 6px;
+}
+
+.footer .footer__bottom ul > li a {
+  color: #007791;
+  background-color: transparent;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer .footer__bottom .mr20 {
+  margin-right: 20px;
+}
+
+.footer .footer__bottom .footer__sitemap {
+  display: none;
+}
+
+.footer .footer__bottom .footer__app-download-link {
+  display: none;
+}
+
 .intro .udeintro__new-channel {
   margin-bottom: 25px;
   background: linear-gradient(-45deg, #EC5252 0%, #6E1A52 100%);
@@ -237,7 +346,7 @@ html, body {
 }
 
 .intro .udeintro__new-channel .udeintro__new-line .how-udemy-works__icon {
-  font-size: 52px;
+  font-size: 47px;
   line-height: 0.5;
 }
 
@@ -372,6 +481,81 @@ html, body {
   font-weight: bold;
 }
 
+.intro .showTime .owl-nav button {
+  border-radius: 50%;
+  padding: 0px;
+  display: inline-block;
+}
+
+.intro .showTime .owl-nav button:hover {
+  background-color: rgba(248, 248, 248, 0);
+}
+
+.intro .showTime .owl-nav button span {
+  font-size: 45px;
+  color: #007791;
+  padding: 0px 20px;
+  border: 1px solid #d6d5d5;
+  background-color: #FFF;
+  border-radius: 50%;
+  line-height: 1.5;
+}
+
+.intro .showTime .owl-nav button span:hover {
+  -webkit-box-shadow: 0 0 8px #acabab;
+          box-shadow: 0 0 8px #acabab;
+}
+
+.intro .showTime .owl-nav .owl-prev {
+  position: absolute;
+  top: 25%;
+  left: -35px;
+}
+
+.intro .showTime .owl-nav .owl-prev:hover {
+  background-color: rgba(248, 248, 248, 0);
+}
+
+.intro .showTime .owl-nav .owl-next {
+  position: absolute;
+  top: 25%;
+  right: -20px;
+}
+
+.intro .showTime .owl-nav .owl-next:hover {
+  background-color: rgba(248, 248, 248, 0);
+}
+
+.intro .showTime .owl-nav .disabled {
+  opacity: 0;
+}
+
+.intro .showTime .stick {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.intro .showTime .stick span {
+  background-color: #f4c150;
+  display: inline;
+  padding: 0px 10px;
+  position: relative;
+  font-size: 13px;
+}
+
+.intro .showTime .stick span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -13px;
+  width: 0;
+  height: 0;
+  border-left: 13px solid #f4c150;
+  border-top: 8px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
 .enjoy {
   margin-top: 25px;
 }
@@ -439,6 +623,10 @@ html, body {
   height: 188px;
 }
 
+.courses {
+  position: relative;
+}
+
 .courses .udecourses {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -458,7 +646,8 @@ html, body {
 
 .courses .card {
   padding: 0;
-  margin: 0 5px;
+  margin: 0 0px;
+  max-width: 210px;
 }
 
 .courses .card .card-body {
@@ -519,6 +708,77 @@ html, body {
   display: inline-block;
   font-size: 18px;
   font-weight: bold;
+}
+
+.courses .card .stick {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.courses .card .stick span {
+  background-color: #f4c150;
+  display: inline;
+  padding: 0px 10px;
+  position: relative;
+  font-size: 13px;
+}
+
+.courses .card .stick span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -13px;
+  width: 0;
+  height: 0;
+  border-left: 13px solid #f4c150;
+  border-top: 8px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
+.courses .owl-nav button {
+  border-radius: 50%;
+  padding: 0px;
+  display: inline-block;
+}
+
+.courses .owl-nav button:hover {
+  background-color: rgba(248, 248, 248, 0);
+}
+
+.courses .owl-nav button span {
+  font-size: 45px;
+  color: #007791;
+  padding: 0px 20px;
+  border: 1px solid #d6d5d5;
+  background-color: #FFF;
+  border-radius: 50%;
+  line-height: 1.5;
+}
+
+.courses .owl-nav button span:hover {
+  -webkit-box-shadow: 0 0 8px #acabab;
+          box-shadow: 0 0 8px #acabab;
+}
+
+.courses .owl-nav .owl-prev {
+  position: absolute;
+  top: 25%;
+  left: -35px;
+}
+
+.courses .owl-nav .owl-prev:hover {
+  background-color: rgba(248, 248, 248, 0);
+}
+
+.courses .owl-nav .owl-next {
+  position: absolute;
+  top: 25%;
+  right: -20px;
+}
+
+.courses .owl-nav .owl-next:hover {
+  background-color: rgba(248, 248, 248, 0);
 }
 
 .services .services__line {
@@ -620,7 +880,7 @@ html, body {
   font-size: 32px;
   padding-right: 16px;
   font-weight: 100;
-  color: #333;
+  color: #666;
 }
 
 .topCategories .topCategories-content .topCategories-content-listItem .item .text {
@@ -638,5 +898,523 @@ html, body {
       -ms-flex: 1;
           flex: 1;
   min-width: 1px;
+}
+
+.feedback {
+  background-color: #f7f8fa;
+}
+
+.feedback .ude__feedback {
+  padding: 25px 0px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.feedback .ude__feedback .ude__feedback-studentSay-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33em;
+}
+
+.feedback .ude__feedback .list__feedback {
+  margin: 25px 0px;
+}
+
+.feedback .ude__feedback .list__feedback .list-feedback-item-conatainer {
+  background-color: #fff;
+  padding: 25px;
+}
+
+.feedback .ude__feedback .list__feedback .list-feedback-item-conatainer .line-top {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.feedback .ude__feedback .list__feedback .list-feedback-item-conatainer .line-top .circle {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.feedback .ude__feedback .list__feedback .list-feedback-item-conatainer .line-top img {
+  display: block;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #7a7878;
+}
+
+.feedback .ude__feedback .list__feedback .list-feedback-item-conatainer .line-top .text {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.feedback .ude__feedback .list__feedback .list-feedback-item-conatainer .line-bottom {
+  font-size: 17px;
+  color: #333;
+}
+
+.feedback .ude__feedback .owl-nav button {
+  border-radius: 50%;
+  padding: 0px;
+  display: inline-block;
+}
+
+.feedback .ude__feedback .owl-nav button:hover {
+  background-color: rgba(248, 248, 248, 0);
+}
+
+.feedback .ude__feedback .owl-nav button span {
+  font-size: 45px;
+  color: #007791;
+  padding: 0px 20px;
+  border: 1px solid #d6d5d5;
+  background-color: #FFF;
+  border-radius: 50%;
+  line-height: 1.5;
+}
+
+.feedback .ude__feedback .owl-nav button span:hover {
+  -webkit-box-shadow: 0 0 8px #acabab;
+          box-shadow: 0 0 8px #acabab;
+}
+
+.feedback .ude__feedback .owl-nav .owl-prev {
+  position: absolute;
+  top: 25%;
+  left: -35px;
+}
+
+.feedback .ude__feedback .owl-nav .owl-prev:hover {
+  background-color: rgba(248, 248, 248, 0);
+}
+
+.feedback .ude__feedback .owl-nav .owl-next {
+  position: absolute;
+  top: 25%;
+  right: -20px;
+}
+
+.feedback .ude__feedback .owl-nav .owl-next:hover {
+  background-color: rgba(248, 248, 248, 0);
+}
+
+.feedback .ude__feedback .owl-nav .disabled {
+  opacity: 0;
+}
+
+.feedback .ude__feedback .ude__feedback-partners {
+  margin: 25px 0px;
+}
+
+.feedback .ude__feedback .ude__feedback-partners .partners__text {
+  text-align: center;
+  color: #cfcfcf;
+  margin-bottom: 25px;
+}
+
+.feedback .ude__feedback .ude__feedback-partners .partners__logos-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.feedback .ude__feedback .ude__feedback-partners .partners__logos {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.feedback .ude__feedback .ude__feedback-partners .partners__logos .logo-item {
+  text-align: center;
+}
+
+.feedback .ude__feedback-contact .non-student-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  border-bottom: none;
+  border-right: 1px solid #dedfe0;
+  padding: 28px 30px;
+}
+
+.feedback .ude__feedback-contact .non-student-cta .non-student-cta__text {
+  max-width: 400px;
+  text-align: center;
+}
+
+.feedback .ude__feedback-contact .non-student-cta .non-student-cta__header > a {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.47em;
+  color: #505763;
+}
+
+.feedback .ude__feedback-contact .non-student-cta .non-student-cta__content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding-top: 3px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 312px) {
+  header .navbar {
+    padding: .5rem 0;
+  }
+  header .navbar .icon-bs4 {
+    font-size: 20px;
+  }
+  header .navbar .icon-bs4 i {
+    margin-right: 10px;
+  }
+  header .header__right .ude-shoping-cart a i {
+    font-size: 20px;
+  }
+  header .header__right .ude-business {
+    display: none;
+  }
+  header .header__right .ude-teach {
+    display: none;
+  }
+  header .header__right .ude-btnGroup {
+    display: none;
+  }
+  header .header__left .header__cate {
+    display: none;
+  }
+  header .header__left .header__form {
+    display: none;
+  }
+  .udeCarousel {
+    background-size: 100% 100%;
+    height: 340px;
+  }
+  .udeCarousel .udeCarousel__content {
+    -webkit-transform: translate(7%, 40%);
+            transform: translate(7%, 40%);
+    max-width: 320px;
+  }
+  .udeCarousel .udeCarousel__content h3 {
+    font-size: 24px;
+    margin-right: 150px;
+    font-weight: 100;
+  }
+  .udeCarousel .udeCarousel__content p {
+    margin-right: 130px;
+  }
+  .intro .udeintro__new-channel {
+    display: none;
+  }
+  .intro .udelistCoures .listCoures__bg-left {
+    display: none;
+  }
+  .enjoy {
+    display: none;
+  }
+  .services .services__main .icon {
+    display: none;
+  }
+  .feedback .logo-item {
+    margin-bottom: 10px;
+  }
+  .feedback .ude__feedback-contact .non-student-cta {
+    border: none;
+    padding: 0 0 30px 0;
+  }
+  .footer .footer__main .footer__main-links {
+    display: none;
+  }
+  .footer .footer__main .ude__lenguage {
+    text-align: left !important;
+  }
+  .footer .footer__bottom .footer__bottom-cotainer {
+    width: 98%;
+    margin: 15px auto;
+  }
+  .footer .footer__bottom .dib {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .footer .footer__bottom .footer__copyright {
+    display: block;
+    font-size: 12px;
+    color: #7e7e7e;
+  }
+  .footer .footer__bottom .footer__bottom-right {
+    text-align: left !important;
+  }
+  .footer .footer__bottom .footer__bottom-right .links {
+    font-size: 12px;
+  }
+  .footer .footer__bottom .footer__bottom-right .footer__sitemap {
+    display: inline-block;
+  }
+  .footer .footer__bottom .footer__bottom-right .footer__app-download-link {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header .header__right .ude-btnGroup {
+    display: block;
+  }
+  header .header__right .ude-btnGroup .ude-btnWhite {
+    font-size: 12px;
+    border: 1px solid black;
+  }
+  header .header__right .ude-btnGroup .ude-btnRed {
+    font-size: 12px;
+  }
+  header .header__left .header__cate {
+    display: block;
+  }
+  header .header__left .header__form {
+    display: block;
+  }
+  .udeCarousel {
+    background-size: 110% 150%;
+    height: 500px;
+    max-width: 1024px;
+  }
+  .udeCarousel .udeCarousel__content {
+    -webkit-transform: translate(10%, 90%);
+            transform: translate(10%, 90%);
+    max-width: 460px;
+  }
+  .udeCarousel .udeCarousel__content h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 0;
+  }
+  .udeCarousel .udeCarousel__content p {
+    margin-right: 0;
+  }
+  .intro .udeintro__new-channel {
+    display: block;
+  }
+  .intro .udeintro__new-channel .how-udemy-works__icon {
+    display: none;
+  }
+  .intro .udeintro__new-channel .udeintro__new-line {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .intro .udeintro__new-channel .udeintro__new-line .udeintro__new-line-item {
+    text-align: center;
+  }
+  .intro .udelistCoures .listCoures__bg-left {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .intro .udelistCoures-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .intro .showTime .nav-tabs .nav-item .nav-link {
+    padding: .5rem .3rem;
+    white-space: normal;
+    max-width: 110px;
+    height: 60px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .intro .showTime .nav-tabs .nav-item .nav-link:hover {
+    border: none;
+    color: #007791;
+    padding: .5rem .3rem;
+  }
+  .intro .showTime .nav-tabs .nav-item .nav-link.active {
+    color: #333;
+    border-bottom: 3px solid #007791;
+  }
+  .enjoy {
+    display: block;
+  }
+  .enjoy .enjoy-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .services .services__main .icon {
+    display: block;
+  }
+  .services .services__main .services__main-container {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .services .services__main .content__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0%, 110%);
+            transform: translate(0%, 110%);
+  }
+  .services .services__main .services__main-icon-row-3 .icon-left {
+    margin-right: 100px;
+  }
+  .services .services__main .services__main-icon-row-3 .icon-right {
+    margin-left: 100px;
+  }
+  .topCategories .topCategories-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .feedback .ude__feedback {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .feedback .ude__feedback .ude__feedback-partners .partners__logos {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .feedback .ude__feedback-contact .non-student-cta {
+    border-right: 1px solid #dedfe0;
+    padding: 0 0 50px 0;
+  }
+  .footer .footer__main-cotainer {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .footer .footer__main .footer__main-links {
+    display: block;
+  }
+  .footer .footer__main .ude__lenguage {
+    text-align: right !important;
+  }
+  .footer .footer__bottom .footer__bottom-cotainer {
+    width: 98%;
+    margin: 15px auto;
+  }
+  .footer .footer__bottom .dib {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .footer .footer__bottom .footer__copyright {
+    display: block;
+    font-size: 12px;
+    color: #7e7e7e;
+  }
+  .footer .footer__bottom .footer__bottom-right {
+    text-align: left !important;
+  }
+  .footer .footer__bottom .footer__bottom-right .links {
+    font-size: 12px;
+  }
+  .footer .footer__bottom .footer__bottom-right .footer__sitemap {
+    display: inline-block;
+  }
+  .footer .footer__bottom .footer__bottom-right .footer__app-download-link {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header .container-fluid .row {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header .header__right .ude-business {
+    display: block;
+  }
+  header .header__right .ude-teach {
+    display: block;
+  }
+  header .header__right .ude-shoping-cart a i {
+    font-size: 13px;
+  }
+  header .header__left {
+    text-align: center;
+  }
+  header .header__left .header__form .form-control {
+    padding: 20px 20px;
+  }
+  .udeCarousel {
+    height: 500px;
+    max-width: 100%;
+  }
+  .udeCarousel .udeCarousel__content {
+    -webkit-transform: translate(30%, 80%);
+            transform: translate(30%, 80%);
+    max-width: 460px;
+  }
+  .udeCarousel .udeCarousel__content h3 {
+    font-size: 40px;
+    margin-right: 0px;
+    font-weight: 700;
+  }
+  .udeCarousel .udeCarousel__content p {
+    margin-right: 0px;
+  }
+  .intro .udeintro__new-channel {
+    display: block;
+  }
+  .intro .udeintro__new-channel .how-udemy-works__icon {
+    display: block;
+    padding-right: 0px;
+  }
+  .intro .udeintro__new-channel .udeintro__new-line {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .intro .udeintro__new-channel .udeintro__new-line .udeintro__new-line-item {
+    text-align: left;
+  }
+  .intro .udelistCoures-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .intro .showTime .nav-tabs .nav-item .nav-link {
+    padding: .5rem 1rem;
+    white-space: normal;
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+  .intro .showTime .nav-tabs .nav-item .nav-link:hover {
+    border: none;
+    color: #007791;
+    padding: .5rem 1rem;
+  }
+  .intro .showTime .nav-tabs .nav-item .nav-link.active {
+    color: #333;
+    border-bottom: 3px solid #007791;
+  }
+  .enjoy .enjoy-item .enjoy-item-container {
+    max-width: 480px;
+  }
+  .topCategories .topCategories-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .feedback .ude__feedback {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .feedback .ude__feedback-contact {
+    padding-bottom: 30px;
+  }
+  .footer .footer__bottom .footer__bottom-right {
+    text-align: right !important;
+  }
+  .footer .footer__bottom .footer__bottom-right .footer__sitemap {
+    display: none;
+  }
+  .footer .footer__bottom .footer__bottom-right .footer__app-download-link {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

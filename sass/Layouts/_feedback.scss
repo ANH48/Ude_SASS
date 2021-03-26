@@ -1,0 +1,138 @@
+.feedback {
+    background-color: #f7f8fa;
+    .ude__feedback {
+        padding: 25px 0px;
+        width: 80%;
+        margin: 0 auto;
+        .ude__feedback-studentSay-title {
+            h2 {
+                font-size: $fs-3;
+                font-weight: 700;
+                line-height: 1.33em;
+            }
+        }
+        .list__feedback {
+            margin: 25px 0px;
+            .list-feedback-item-conatainer {
+                background-color: #fff;
+                padding: 25px;
+                .line-top {
+                    font-size: $fs-2;
+                    font-weight: 700;
+                    line-height: 1.5em;
+                    align-items: center;
+                    display: flex;
+                    margin-bottom: 20px;
+                    .circle {
+                        width: 65px;
+                        height: 65px;
+                        border-radius: 50%;
+                    }
+                    img {
+                        display: block;
+                        width: 65px;
+                        height: 65px;
+                        border-radius: 50%;
+                        background-color: #7a7878;
+                    }
+                    .text {
+                        display: inline-block;
+                        margin-left: 1rem;
+                    }
+                }
+                .line-bottom {
+                    font-size: 17px;
+                    color: #333;
+                }
+            }
+        }
+        .owl-nav {
+            button {
+                border-radius: 50%;
+                padding: 0px;
+                display: inline-block;
+                &:hover{
+                    background-color: rgba(248, 248, 248, 0);    
+                }
+                span {
+                    font-size: 45px;
+                    color: $color-blue;
+                    padding: 0px 20px;
+                    border: 1px solid #d6d5d5;
+                    background-color: #FFF;
+                    border-radius: 50%;
+                    line-height: 1.5;
+                    &:hover {
+                        box-shadow: 0 0 8px #acabab;
+                    }
+                }
+            }
+            .owl-prev {
+                position: absolute;
+                top: 25%;
+                left: -35px;
+                &:hover{
+                    background-color: rgba(248, 248, 248, 0);    
+                }
+            }
+            .owl-next {
+                position: absolute;
+                top: 25%;
+                right: -20px;
+                &:hover{
+                    background-color: rgba(248, 248, 248, 0);    
+                }
+            }
+            .disabled {
+                opacity: 0;
+            }
+        }
+        .ude__feedback-partners {
+            margin: 25px 0px;
+            .partners__text {
+                text-align: center;
+                color: #cfcfcf;
+                margin-bottom: 25px;
+            }
+            .partners__logos-container {
+                width: 80%;
+                margin: 0 auto;
+            }
+            .partners__logos {
+                width: 80%;
+                margin: 0 auto;
+                .logo-item  {
+                    text-align: center;
+                }
+            }
+        }
+    }
+   .ude__feedback-contact {
+       .non-student-cta {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            border-bottom: none;
+            border-right: 1px solid #dedfe0;
+            padding: 28px 30px;
+            .non-student-cta__text {
+                max-width: 400px;
+                text-align: center;
+            }
+            .non-student-cta__header > a {
+                font-size: 19px;
+                font-weight: 700;
+                line-height: 1.47em;
+                color: #505763;
+            }
+            .non-student-cta__content {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5em;
+                padding-top: 3px;
+                margin-bottom: 15px;
+            }
+        
+       }
+   }
+}

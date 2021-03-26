@@ -17,5 +17,11 @@
         @include styleButtonHover($color-red-2,$color-white-0,$color-red-2);
     }
 }
+.ude-btnquaternary {
+    color: #686f7a;
+    background-color: #fff;
+    border: 1px solid #686f7a;
+    padding: 8px 20px;
+}
 
 

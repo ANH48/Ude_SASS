@@ -1,0 +1,83 @@
+.footer {
+    .footer__main {
+        border-top: 1px solid #dedfe0;
+        border-bottom: 1px solid #dedfe0;
+    }
+    .footer__main-cotainer {
+        width: 85%;
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 40px 20px;
+
+        .footer__main-links  {
+            ul {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 110px;
+            }
+            ul > li {
+                list-style: none;
+                display: inline-block;
+                padding: 2px 0px;
+                a {
+                    color: #007791;
+                    background-color: transparent;
+                    font-weight: 400;
+                    text-decoration: none;
+                    &:hover {
+                        color: #111;
+                    }
+                }
+                a.bold {
+                    font-weight: 700;
+                }
+            }
+           
+        }
+        .ude__lenguage {
+            .icon {
+                padding-right: 10px;
+                font-size: 13px;
+            }
+            .text {
+                padding-right: 25px;
+                font-size: 15px;
+            }
+        }   
+    }
+    .footer__bottom {
+        border-bottom: 6px solid #ec5252;
+        .footer__bottom-cotainer {
+            width: 80%;
+            margin: 30px auto;
+            max-width: 1440px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .list-inline {
+            padding-left: 0;
+            list-style: none;
+            margin-left: -5px;
+        }
+        ul > li {
+            display: inline-block;
+            padding: 6px;
+            a {
+                color: #007791;
+                background-color: transparent;
+                font-weight: 400;
+                text-decoration: none;
+            }
+        }
+        .mr20 {
+            margin-right: 20px;
+        }
+        .footer__sitemap {
+            display: none;
+        }
+        .footer__app-download-link  {
+            display: none;
+        }
+    }
+}
